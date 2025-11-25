@@ -50,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -398,6 +400,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network Analysis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -414,6 +434,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InteractionNetwork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InteractionNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.build_graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        build_graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.export_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        export_summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.get_high_impact_genes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_high_impact_genes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.get_multigene_drugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_multigene_drugs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -475,6 +586,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InteractionNetwork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InteractionNetwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.build_graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        build_graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.export_summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        export_summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.get_high_impact_genes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_high_impact_genes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgx_toolkit.analysis.network.InteractionNetwork.get_multigene_drugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_multigene_drugs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -494,11 +685,475 @@
 
 
 <h1 id="network-analysis-module">Network Analysis Module</h1>
-<p>::: pgx_toolkit.analysis.network
-    handler: python
-    options:
-      members:
-        - InteractionNetwork</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="pgx_toolkit.analysis.network"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pgx_toolkit.analysis.network.InteractionNetwork" class="doc doc-heading">
+            <code>InteractionNetwork</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+
+
+
+
+
+              <details class="mkdocstrings-source">
+                <summary>Source code in <code>pgx_toolkit/analysis/network.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">InteractionNetwork</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">matched_variants</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">build_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matched_variants</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Builds a bipartite-like graph from matched variants.</span>
+<span class="sd">        Nodes: Genes, Drugs</span>
+<span class="sd">        Edges: Interaction (annotated by rsID)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">matched_variants</span> <span class="o">=</span> <span class="n">matched_variants</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">mv</span> <span class="ow">in</span> <span class="n">matched_variants</span><span class="p">:</span>
+            <span class="n">gene</span> <span class="o">=</span> <span class="n">mv</span><span class="o">.</span><span class="n">gene</span>
+            <span class="c1"># Drugs field can contain multiple drugs separated by commas or other delimiters.</span>
+            <span class="c1"># We&#39;ll do simple splitting by comma for now.</span>
+            <span class="n">drugs</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">mv</span><span class="o">.</span><span class="n">drug</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">gene</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Add Gene Node</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;gene&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">drug</span> <span class="ow">in</span> <span class="n">drugs</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">drug</span><span class="p">:</span>
+                    <span class="k">continue</span>
+                <span class="c1"># Add Drug Node</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">drug</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;drug&#39;</span><span class="p">)</span>
+
+                <span class="c1"># Add Edge</span>
+                <span class="c1"># We can add weight or metadata to the edge (e.g., rsID count)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">has_edge</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="n">drug</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">gene</span><span class="p">][</span><span class="n">drug</span><span class="p">][</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">gene</span><span class="p">][</span><span class="n">drug</span><span class="p">][</span><span class="s1">&#39;rsids&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mv</span><span class="o">.</span><span class="n">rsid</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="n">drug</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">rsids</span><span class="o">=</span><span class="p">[</span><span class="n">mv</span><span class="o">.</span><span class="n">rsid</span><span class="p">])</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_high_impact_genes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns top N genes by degree centrality (number of connected drugs).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">gene_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;gene&#39;</span><span class="p">]</span>
+        <span class="n">degrees</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">gene_nodes</span><span class="p">}</span>
+        <span class="n">sorted_genes</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">degrees</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sorted_genes</span><span class="p">[:</span><span class="n">top_n</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_multigene_drugs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns top N drugs by degree centrality (number of connected genes).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">drug_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;drug&#39;</span><span class="p">]</span>
+        <span class="n">degrees</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">drug_nodes</span><span class="p">}</span>
+        <span class="n">sorted_drugs</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">degrees</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sorted_drugs</span><span class="p">[:</span><span class="n">top_n</span><span class="p">]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">export_summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a DataFrame summarizing the network.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+            <span class="c1"># Determine which is gene and which is drug (graph is undirected)</span>
+            <span class="n">node_u_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">node_u_type</span> <span class="o">==</span> <span class="s1">&#39;gene&#39;</span><span class="p">:</span>
+                <span class="n">gene</span><span class="p">,</span> <span class="n">drug</span> <span class="o">=</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">gene</span><span class="p">,</span> <span class="n">drug</span> <span class="o">=</span> <span class="n">v</span><span class="p">,</span> <span class="n">u</span>
+
+            <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;Gene&#39;</span><span class="p">:</span> <span class="n">gene</span><span class="p">,</span>
+                <span class="s1">&#39;Drug&#39;</span><span class="p">:</span> <span class="n">drug</span><span class="p">,</span>
+                <span class="s1">&#39;Interaction_Count&#39;</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;rsIDs&#39;</span><span class="p">:</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;rsids&#39;</span><span class="p">]))</span>
+            <span class="p">})</span>
+
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pgx_toolkit.analysis.network.InteractionNetwork.build_graph" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">build_graph</span><span class="p">(</span><span class="n">matched_variants</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Builds a bipartite-like graph from matched variants.
+Nodes: Genes, Drugs
+Edges: Interaction (annotated by rsID)</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>pgx_toolkit/analysis/network.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">build_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matched_variants</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Builds a bipartite-like graph from matched variants.</span>
+<span class="sd">    Nodes: Genes, Drugs</span>
+<span class="sd">    Edges: Interaction (annotated by rsID)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">matched_variants</span> <span class="o">=</span> <span class="n">matched_variants</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">mv</span> <span class="ow">in</span> <span class="n">matched_variants</span><span class="p">:</span>
+        <span class="n">gene</span> <span class="o">=</span> <span class="n">mv</span><span class="o">.</span><span class="n">gene</span>
+        <span class="c1"># Drugs field can contain multiple drugs separated by commas or other delimiters.</span>
+        <span class="c1"># We&#39;ll do simple splitting by comma for now.</span>
+        <span class="n">drugs</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">mv</span><span class="o">.</span><span class="n">drug</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">gene</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="c1"># Add Gene Node</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;gene&#39;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">drug</span> <span class="ow">in</span> <span class="n">drugs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">drug</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="c1"># Add Drug Node</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">drug</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;drug&#39;</span><span class="p">)</span>
+
+            <span class="c1"># Add Edge</span>
+            <span class="c1"># We can add weight or metadata to the edge (e.g., rsID count)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">has_edge</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="n">drug</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">gene</span><span class="p">][</span><span class="n">drug</span><span class="p">][</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">gene</span><span class="p">][</span><span class="n">drug</span><span class="p">][</span><span class="s1">&#39;rsids&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mv</span><span class="o">.</span><span class="n">rsid</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span> <span class="n">drug</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">rsids</span><span class="o">=</span><span class="p">[</span><span class="n">mv</span><span class="o">.</span><span class="n">rsid</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pgx_toolkit.analysis.network.InteractionNetwork.export_summary" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">export_summary</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Returns a DataFrame summarizing the network.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>pgx_toolkit/analysis/network.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">export_summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a DataFrame summarizing the network.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="c1"># Determine which is gene and which is drug (graph is undirected)</span>
+        <span class="n">node_u_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">node_u_type</span> <span class="o">==</span> <span class="s1">&#39;gene&#39;</span><span class="p">:</span>
+            <span class="n">gene</span><span class="p">,</span> <span class="n">drug</span> <span class="o">=</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">gene</span><span class="p">,</span> <span class="n">drug</span> <span class="o">=</span> <span class="n">v</span><span class="p">,</span> <span class="n">u</span>
+
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s1">&#39;Gene&#39;</span><span class="p">:</span> <span class="n">gene</span><span class="p">,</span>
+            <span class="s1">&#39;Drug&#39;</span><span class="p">:</span> <span class="n">drug</span><span class="p">,</span>
+            <span class="s1">&#39;Interaction_Count&#39;</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;rsIDs&#39;</span><span class="p">:</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;rsids&#39;</span><span class="p">]))</span>
+        <span class="p">})</span>
+
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pgx_toolkit.analysis.network.InteractionNetwork.get_high_impact_genes" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_high_impact_genes</span><span class="p">(</span><span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Returns top N genes by degree centrality (number of connected drugs).</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>pgx_toolkit/analysis/network.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_high_impact_genes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns top N genes by degree centrality (number of connected drugs).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">gene_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;gene&#39;</span><span class="p">]</span>
+    <span class="n">degrees</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">gene_nodes</span><span class="p">}</span>
+    <span class="n">sorted_genes</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">degrees</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sorted_genes</span><span class="p">[:</span><span class="n">top_n</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pgx_toolkit.analysis.network.InteractionNetwork.get_multigene_drugs" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_multigene_drugs</span><span class="p">(</span><span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Returns top N drugs by degree centrality (number of connected genes).</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>pgx_toolkit/analysis/network.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_multigene_drugs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns top N drugs by degree centrality (number of connected genes).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">drug_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">if</span> <span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;drug&#39;</span><span class="p">]</span>
+    <span class="n">degrees</span> <span class="o">=</span> <span class="p">{</span><span class="n">n</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">drug_nodes</span><span class="p">}</span>
+    <span class="n">sorted_drugs</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">degrees</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sorted_drugs</span><span class="p">[:</span><span class="n">top_n</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
